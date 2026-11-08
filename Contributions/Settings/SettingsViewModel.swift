@@ -22,7 +22,7 @@ final class SettingsViewModel: ObservableObject {
     }
 
     var feedbackURL: URL {
-        URL(string: "mailto:goig.ander@icloud.com")!
+        URL(string: "mailto:support@latelunch.app")!
     }
 
     var openSourceURL: URL {
