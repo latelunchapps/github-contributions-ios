@@ -26,6 +26,6 @@ final class SettingsViewModel: ObservableObject {
     }
 
     var openSourceURL: URL {
-        URL(string: "https://github.com/AnderGoig/github-contributions-ios")!
+        URL(string: "https://github.com/latelunchapps/github-contributions-ios")!
     }
 }

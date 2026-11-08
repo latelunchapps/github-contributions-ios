@@ -23,12 +23,12 @@ Stay on top of your GitHub contributions, right from your iOS Home Screen.
 
 ## Contributing
 
-If you have feature requests or bug reports, feel free to send pull requests or [open an issue](https://github.com/AnderGoig/github-contributions-ios/issues/new).
+If you have feature requests or bug reports, feel free to send pull requests or [open an issue](https://github.com/latelunchapps/github-contributions-ios/issues/new).
 Please check out the [CONTRIBUTING](CONTRIBUTING.md) guide before contributing.
 
 ## Credits
 
-"Contribution Graphs for GitHub" is brought to you by [Ander Goig](https://github.com/AnderGoig) and [contributors to the project](https://github.com/AnderGoig/github-contributions-ios/contributors).
+"Contribution Graphs for GitHub" is brought to you by [Ander Goig](https://github.com/AnderGoig) and [contributors to the project](https://github.com/latelunchapps/github-contributions-ios/contributors).
 
 ### Third-Party Libraries
 
