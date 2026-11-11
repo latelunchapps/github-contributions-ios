@@ -8,14 +8,25 @@ There is no workspace and no CocoaPods: open `Contributions.xcodeproj`. Dependen
 
 ## Build
 
-This repo has no unit or UI test targets, and neither local package declares tests. Before opening a PR, build on an available iOS Simulator. List simulators with `xcrun simctl list devices available` and pick a recent iPhone.
+This repo has no unit or UI test targets, and neither local package declares tests. Before opening a PR, build on an available iOS Simulator. These paths sit outside the git work tree so they survive `actions/checkout` (`clean: true` runs `git clean -ffdx`, which would delete any DerivedData or SourcePackages inside the repo). They are also separate from Ander's personal `~/Library/Developer/Xcode/DerivedData`, so CI builds do not collide with local Xcode. On the self-hosted Mac runner, always use these flags so incremental compiles, SPM checkouts, and the compilation cache reuse work across jobs.
 
 ```bash
+DD="$HOME/Library/Developer/Xcode/DerivedData-ci/github-contributions-ios"
+# List simulators with `xcrun simctl list devices available` and prefer an id
+# if two devices share a name (this happened with "iPhone 16" on the runner).
+DEST="platform=iOS Simulator,id=<id>"
+CACHE_FLAGS=(
+  -derivedDataPath "$DD"
+  -clonedSourcePackagesDirPath "$DD/SourcePackages"
+  COMPILATION_CACHE_ENABLE_CACHING=YES
+  COMPILATION_CACHE_CAS_PATH="$DD/CompilationCache.noindex"
+)
+
 # App (scheme name is App; target name is Contributions)
-xcodebuild -project Contributions.xcodeproj -scheme App -destination 'platform=iOS Simulator,name=<iPhone>' build
+xcodebuild -project Contributions.xcodeproj -scheme App -destination "$DEST" "${CACHE_FLAGS[@]}" build
 
 # Widget extension (when you change widget or shared kit code)
-xcodebuild -project Contributions.xcodeproj -scheme Widget -destination 'platform=iOS Simulator,name=<iPhone>' build
+xcodebuild -project Contributions.xcodeproj -scheme Widget -destination "$DEST" "${CACHE_FLAGS[@]}" build
 ```
 
 `NetworkKit` and `InterfaceKit` are iOS-only, so `swift test` / `swift build` on macOS will not work for them. Report the build commands and results in the PR description, and say that there is no test target.
