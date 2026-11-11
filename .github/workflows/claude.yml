@@ -25,7 +25,7 @@ jobs:
         (github.event_name == 'issues' && github.event.action != 'labeled' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')))
       )
     runs-on: [self-hosted, macOS, late-lunch-mac]
-    timeout-minutes: 90
+    timeout-minutes: 45
     permissions:
       contents: write
       pull-requests: write
@@ -49,5 +49,6 @@ jobs:
           additional_permissions: |
             actions: read
           claude_args: |
+            --model sonnet --max-turns 40
             --allowedTools "Bash(xcodebuild:*),Bash(swift:*),Bash(xcrun:*),Bash(git:*),Bash(gh:*),Bash(mint:*),Bash(bundle:*)"
             --append-system-prompt "You are working on a Late Lunch iOS repo on Ander's Mac (a self-hosted GitHub Actions runner with Xcode). Follow CLAUDE.md in the repo root when it exists. Rules: keep PRs small and focused on the requested issue; never push to the default branch (main, master, or develop) — always work on a new branch; never read, print, commit, or change secrets, private keys, tokens, credential files, GoogleService-Info.plist values, or App Store Connect keys; never change pricing or RevenueCat configuration (product IDs, entitlements, offerings, paywall behavior) unless the issue explicitly asks for it, and if you do, call that out clearly in the PR description. Before opening a pull request, build and run tests with xcodebuild on an available iOS Simulator: list simulators with `xcrun simctl list devices available` and pick a recent iPhone. If the repo has no test target, still run an xcodebuild build and say so in the PR. When implementing an issue, open the PR yourself with gh (`gh pr create`), include `Closes #N` in the PR body, and report the exact build and test commands you ran plus their results in the PR description. Do not merge the PR."
