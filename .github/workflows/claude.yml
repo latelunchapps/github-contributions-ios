@@ -10,6 +10,11 @@ on:
   issues:
     types: [opened, assigned, labeled]
 
+# Concurrency groups are scoped to this repository only; a group name without
+# github.repository would still not serialize jobs across Late Lunch repos.
+# The single self-hosted Mac already queues one job at a time, which is what
+# serializes work across repositories. Keep this per-repo group so two jobs
+# from the same repo do not overlap if the runner setting ever changes.
 concurrency:
   group: claude-${{ github.repository }}
   cancel-in-progress: false
@@ -25,7 +30,7 @@ jobs:
         (github.event_name == 'issues' && github.event.action != 'labeled' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')))
       )
     runs-on: [self-hosted, macOS, late-lunch-mac]
-    timeout-minutes: 45
+    timeout-minutes: 60
     permissions:
       contents: write
       pull-requests: write
@@ -36,8 +41,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          fetch-depth: 1
+          # Full history. On a persistent runner later jobs only fetch new commits,
+          # and Claude can branch, push, and inspect history. fetch-depth: 1 would
+          # also allow a new branch from HEAD, but blame/log/merge-base are shallow.
+          fetch-depth: 0
+          # git clean -ffdx && git reset --hard HEAD. This wipes ignored files
+          # inside the workspace (node_modules, dist, .build) but not caches we
+          # keep outside it (DerivedData-ci, ~/.npm). Do not put build products
+          # in the workspace if they should survive across jobs.
           clean: true
+          persist-credentials: true
+
+      - name: Ensure persistent Xcode caches
+        run: |
+          root="$HOME/Library/Developer/Xcode/DerivedData-ci/${{ github.event.repository.name }}"
+          mkdir -p "$root/SourcePackages" "$root/CompilationCache.noindex"
 
       - name: Run Claude Code
         id: claude
@@ -49,6 +67,6 @@ jobs:
           additional_permissions: |
             actions: read
           claude_args: |
-            --model sonnet --max-turns 40
+            --max-turns 60
             --allowedTools "Bash(xcodebuild:*),Bash(swift:*),Bash(xcrun:*),Bash(git:*),Bash(gh:*),Bash(mint:*),Bash(bundle:*)"
-            --append-system-prompt "You are working on a Late Lunch iOS repo on Ander's Mac (a self-hosted GitHub Actions runner with Xcode). Follow CLAUDE.md in the repo root when it exists. Rules: keep PRs small and focused on the requested issue; never push to the default branch (main, master, or develop) — always work on a new branch; never read, print, commit, or change secrets, private keys, tokens, credential files, GoogleService-Info.plist values, or App Store Connect keys; never change pricing or RevenueCat configuration (product IDs, entitlements, offerings, paywall behavior) unless the issue explicitly asks for it, and if you do, call that out clearly in the PR description. Before opening a pull request, build and run tests with xcodebuild on an available iOS Simulator: list simulators with `xcrun simctl list devices available` and pick a recent iPhone. If the repo has no test target, still run an xcodebuild build and say so in the PR. When implementing an issue, open the PR yourself with gh (`gh pr create`), include `Closes #N` in the PR body, and report the exact build and test commands you ran plus their results in the PR description. Do not merge the PR."
+            --append-system-prompt "You are working on a Late Lunch iOS repo on Ander's Mac (a self-hosted GitHub Actions runner with Xcode). Follow CLAUDE.md in the repo root when it exists. Rules: keep PRs small and focused on the requested issue; never push to the default branch (main, master, or develop) — always work on a new branch; never read, print, commit, or change secrets, private keys, tokens, credential files, GoogleService-Info.plist values, or App Store Connect keys; never change pricing or RevenueCat configuration (product IDs, entitlements, offerings, paywall behavior) unless the issue explicitly asks for it, and if you do, call that out clearly in the PR description. When implementing an issue, open the PR yourself with gh (`gh pr create`), include `Closes #N` in the PR body, and report the exact build and test commands you ran plus their results in the PR description. Do not merge the PR. Build caches must live outside the workspace so checkout's git clean -ffdx does not wipe them. Always pass these xcodebuild flags (create the dirs if needed): `-derivedDataPath \"$HOME/Library/Developer/Xcode/DerivedData-ci/<repo>\"` `-clonedSourcePackagesDirPath \"$HOME/Library/Developer/Xcode/DerivedData-ci/<repo>/SourcePackages\"` `COMPILATION_CACHE_ENABLE_CACHING=YES` `COMPILATION_CACHE_CAS_PATH=\"$HOME/Library/Developer/Xcode/DerivedData-ci/<repo>/CompilationCache.noindex\"`. Use the exact commands in CLAUDE.md. Pick a simulator with `xcrun simctl list devices available` and target it by id if names collide. If the repo has no test target, still run an xcodebuild build and say so in the PR. Do not use the default DerivedData path (it would mix with local Xcode builds) and do not put DerivedData inside the repo."
