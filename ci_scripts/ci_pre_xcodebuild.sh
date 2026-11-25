@@ -4,7 +4,7 @@
 #
 # The marketing version comes from the tag, and the build number is Xcode
 # Cloud's own counter (CI_BUILD_NUMBER, whose Next Build Number in App Store
-# Connect is above 21, the last build shipped before Xcode Cloud). Both land
+# Connect is above 21, the last number used before Xcode Cloud). Both land
 # in the MARKETING_VERSION / CURRENT_PROJECT_VERSION build settings that the
 # app's and the widget's Info.plists read, so the binary carries the same
 # build number App Store Connect shows. Xcode Cloud does not take extra
@@ -27,7 +27,7 @@ if [ -z "$tag" ]; then
   exit 1
 fi
 
-# Require the leading `v`: the legacy tags (`1.6.2` and earlier) are bare
+# Require the leading `v`: the legacy tags (`1.6.1` and earlier) are bare
 # versions, and must never start a release build.
 version="${tag#v}"
 if [ "$version" = "$tag" ] || ! printf '%s' "$version" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
