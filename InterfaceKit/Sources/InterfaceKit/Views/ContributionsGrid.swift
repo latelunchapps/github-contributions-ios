@@ -138,7 +138,7 @@ struct ContributionsGridLayout {
         let tilePixels = (tile * scale).rounded()
         let offsets: [CGFloat]
         let stretchedGap = columns > 1 ? (widthPixels - CGFloat(columns) * tilePixels) / CGFloat(columns - 1) / scale : 0
-        if columns > 1, stretchedGap <= rowSpacing + 2 * pixel {
+        if columns > 1, stretchedGap <= rowSpacing + 2 * pixel + 0.001 {
             let pitch = (widthPixels - tilePixels) / CGFloat(columns - 1)
             offsets = (0 ..< columns).map { (CGFloat($0) * pitch).rounded() / scale }
         } else {
