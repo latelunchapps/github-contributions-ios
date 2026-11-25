@@ -598,24 +598,25 @@
       }
     },
     "widget-guide-step-2-subtitle" : {
+      "comment" : "Widget Setup guide, step 2. “Edit” and “Add Widget” are the Home Screen's own button and menu item, so use the system's translations. Don't name a corner: Edit is top-right on iPhone and top-left on iPad.",
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tap the 'Edit' button in the upper-left corner to add new widgets."
+            "value" : "Tap 'Edit' at the top of the screen, then 'Add Widget'."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pulsa el botón 'Editar' en la esquina superior izquierda para añadir widgets."
+            "value" : "Pulsa 'Editar' en la parte superior de la pantalla y luego 'Añadir widget'."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "新しいウィジェットを追加するには、左上隅の「編集」ボタンをタップします"
+            "value" : "画面上部の「編集」をタップして\n「ウィジェットを追加」を選択します"
           }
         }
       }
