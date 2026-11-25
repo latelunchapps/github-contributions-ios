@@ -2,23 +2,47 @@
   "sourceLanguage" : "en",
   "strings" : {
     "contributions-empty-text" : {
+      "comment" : "Shown on a Home Screen widget that has no username yet. “Edit Widget” is the system's menu item for the widget, so use the system's own translation of it.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Set a GitHub username"
+            "value" : "Touch and hold, then tap Edit Widget to choose a GitHub username"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Editar usuario de GitHub"
+            "value" : "Mantén pulsado y toca Editar widget para elegir un usuario de GitHub"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ユーザー名を設定しましょう"
+            "value" : "長押しして「ウィジェットを編集」からGitHubのユーザー名を選択"
+          }
+        }
+      }
+    },
+    "contributions-empty-text-lock-screen" : {
+      "comment" : "Shown on a Lock Screen widget that has no username yet. “Customize” is the system's button for editing the Lock Screen, so use the system's own translation of it.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customize the Lock Screen, then tap this widget to choose a username"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personaliza la pantalla bloqueada y toca este widget para elegir un usuario"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ロック画面をカスタマイズして、このウィジェットをタップしてユーザー名を選択"
           }
         }
       }
