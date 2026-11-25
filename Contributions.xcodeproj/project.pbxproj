@@ -3,54 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05AD13EC33344E73A928FABB /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B39CC125CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift */; };
-		64FF780B36374187AD59D1C1 /* ContributionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A73F232C67BB6C000CA518 /* ContributionsStorage.swift */; };
-		7702E18A25CF2DC9003ECC3D /* ContributionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7702E18925CF2DC9003ECC3D /* ContributionsList.swift */; };
-		771E3B54253CEB7600984A0B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E3B4E253CEADD00984A0B /* ArrayExtensions.swift */; };
-		771E3B5A253CEBCE00984A0B /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E3B59253CEBCE00984A0B /* DateExtensions.swift */; };
-		771E3BAF253E42BA00984A0B /* ContributionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E3BAE253E42BA00984A0B /* ContributionsProvider.swift */; };
-		774E5BDD2FA5F45B00AADE79 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 774E5BDC2FA5F45B00AADE79 /* Localizable.xcstrings */; };
-		774E5BDF2FA5F45B00AADE79 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 774E5BDE2FA5F45B00AADE79 /* Localizable.xcstrings */; };
-		774E5BE12FA5F45B00AADE79 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 774E5BE02FA5F45B00AADE79 /* InfoPlist.xcstrings */; };
-		7761A6F52543BD82000871E3 /* ContributionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761A6F42543BD82000871E3 /* ContributionsRow.swift */; };
-		7761A6FB2543BDB6000871E3 /* ContributionsRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761A6FA2543BDB6000871E3 /* ContributionsRowViewModel.swift */; };
-		7771530B2E4E923000489A4A /* WidgetIntentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771530A2E4E922B00489A4A /* WidgetIntentConfiguration.swift */; };
-		7771530E2E4E939400489A4A /* WidgetIntentTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771530D2E4E939100489A4A /* WidgetIntentTheme.swift */; };
-		777D65F025379A23001029C4 /* ContributionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D65EF25379A23001029C4 /* ContributionsApp.swift */; };
-		777D65F225379A23001029C4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D65F125379A23001029C4 /* SettingsView.swift */; };
-		777D65F425379A27001029C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777D65F325379A27001029C4 /* Assets.xcassets */; };
-		777D65F725379A27001029C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777D65F625379A27001029C4 /* Preview Assets.xcassets */; };
 		777D66542537A18D001029C4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777D66532537A18D001029C4 /* WidgetKit.framework */; };
 		777D66562537A18D001029C4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777D66552537A18D001029C4 /* SwiftUI.framework */; };
-		777D66592537A18D001029C4 /* ContributionsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D66582537A18D001029C4 /* ContributionsWidgetBundle.swift */; };
-		777D665C2537A18F001029C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777D665B2537A18F001029C4 /* Assets.xcassets */; };
 		777D66622537A18F001029C4 /* ContributionsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 777D66522537A18D001029C4 /* ContributionsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		779B0F06253F8DA40046B7E1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B0F05253F8DA40046B7E1 /* SettingsViewModel.swift */; };
-		77A73F242C67BB6C000CA518 /* ContributionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A73F232C67BB6C000CA518 /* ContributionsStorage.swift */; };
-		77B39CB825CF59B000B5D0B8 /* ContributionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B39CB725CF59B000B5D0B8 /* ContributionsListViewModel.swift */; };
-		77B39CC225CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B39CC125CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift */; };
-		77BD1EA02540EF0800830186 /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD1E9F2540EF0800830186 /* SettingsRow.swift */; };
-		77BD1EA62540EF4300830186 /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD1EA52540EF4300830186 /* SettingsItem.swift */; };
-		77BD1EAC2540EFB500830186 /* NetworkKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD1EAB2540EFB500830186 /* NetworkKitExtensions.swift */; };
-		77BD1EB82540F60000830186 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD1EB72540F60000830186 /* GuideView.swift */; };
-		77BF7ACF2543537E006DA340 /* ContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF7AC925435329006DA340 /* ContributionsViewModel.swift */; };
-		77BF7AE125435ECD006DA340 /* ContributionsGraphEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF7AE025435ECD006DA340 /* ContributionsGraphEntryView.swift */; };
-		77BF7AE725435FB1006DA340 /* ContributionsGraphWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF7AE625435FB1006DA340 /* ContributionsGraphWidgetView.swift */; };
-		77BF7B3D2543B33B006DA340 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF7B3C2543B33A006DA340 /* StepView.swift */; };
-		77BF7B432543B361006DA340 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF7B422543B361006DA340 /* Step.swift */; };
-		826C74498C9E49CF82D8BE1F /* ThemeAppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7ACC65D04B7A9091F925 /* ThemeAppEnum.swift */; };
 		B96A619B284A719A00CB7B55 /* InterfaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = B96A619A284A719A00CB7B55 /* InterfaceKit */; };
 		B96A619D284A719A00CB7B55 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = B96A619C284A719A00CB7B55 /* NetworkKit */; };
 		B96A619F284A71A100CB7B55 /* InterfaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = B96A619E284A71A100CB7B55 /* InterfaceKit */; };
 		B96A61A1284A71A100CB7B55 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = B96A61A0284A71A100CB7B55 /* NetworkKit */; };
 		BE67BFC326DBBF3B00B09345 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BE67BFC226DBBF3B00B09345 /* Kingfisher */; };
-		EB7FE604C91D44BA8247479A /* UsernameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B9D35A4049ADBD35A798 /* UsernameEntity.swift */; };
-		EDDE9FC91D604E43B5D54E1F /* ConfigurationAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681E657708C44506A185E9DA /* ConfigurationAppIntent.swift */; };
-		F4A146922B6505AB00354A8B /* ContributionsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E3BA8253E423700984A0B /* ContributionsGraphWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,51 +42,43 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		441AD52830B54A62933247A9 /* ContributionsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContributionsWidget.entitlements; sourceTree = "<group>"; };
-		681E657708C44506A185E9DA /* ConfigurationAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationAppIntent.swift; sourceTree = "<group>"; };
-		7021D7BFAB3F485CABF3C946 /* Contributions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contributions.entitlements; sourceTree = "<group>"; };
-		7702E18925CF2DC9003ECC3D /* ContributionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsList.swift; sourceTree = "<group>"; };
-		771E3B4E253CEADD00984A0B /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
-		771E3B59253CEBCE00984A0B /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
-		771E3BA8253E423700984A0B /* ContributionsGraphWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsGraphWidget.swift; sourceTree = "<group>"; };
-		771E3BAE253E42BA00984A0B /* ContributionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsProvider.swift; sourceTree = "<group>"; };
-		774E5BDC2FA5F45B00AADE79 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		774E5BDE2FA5F45B00AADE79 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		774E5BE02FA5F45B00AADE79 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		7761A6F42543BD82000871E3 /* ContributionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsRow.swift; sourceTree = "<group>"; };
-		7761A6FA2543BDB6000871E3 /* ContributionsRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsRowViewModel.swift; sourceTree = "<group>"; };
-		7771530A2E4E922B00489A4A /* WidgetIntentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetIntentConfiguration.swift; sourceTree = "<group>"; };
-		7771530D2E4E939100489A4A /* WidgetIntentTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetIntentTheme.swift; sourceTree = "<group>"; };
 		777D65EC25379A23001029C4 /* Contributions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contributions.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		777D65EF25379A23001029C4 /* ContributionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsApp.swift; sourceTree = "<group>"; };
-		777D65F125379A23001029C4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		777D65F325379A27001029C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		777D65F625379A27001029C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		777D65F825379A27001029C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		777D66522537A18D001029C4 /* ContributionsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContributionsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		777D66532537A18D001029C4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		777D66552537A18D001029C4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		777D66582537A18D001029C4 /* ContributionsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsWidgetBundle.swift; sourceTree = "<group>"; };
-		777D665B2537A18F001029C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		777D665D2537A18F001029C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		779B0F05253F8DA40046B7E1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		77A73F232C67BB6C000CA518 /* ContributionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsStorage.swift; sourceTree = "<group>"; };
-		77B39CB725CF59B000B5D0B8 /* ContributionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsListViewModel.swift; sourceTree = "<group>"; };
-		77B39CC125CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
-		77BD1E9F2540EF0800830186 /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
-		77BD1EA52540EF4300830186 /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
-		77BD1EAB2540EFB500830186 /* NetworkKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKitExtensions.swift; sourceTree = "<group>"; };
-		77BD1EB72540F60000830186 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
-		77BF7AC925435329006DA340 /* ContributionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsViewModel.swift; sourceTree = "<group>"; };
-		77BF7AE025435ECD006DA340 /* ContributionsGraphEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsGraphEntryView.swift; sourceTree = "<group>"; };
-		77BF7AE625435FB1006DA340 /* ContributionsGraphWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsGraphWidgetView.swift; sourceTree = "<group>"; };
-		77BF7B3C2543B33A006DA340 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
-		77BF7B422543B361006DA340 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
-		8932B9D35A4049ADBD35A798 /* UsernameEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameEntity.swift; sourceTree = "<group>"; };
 		B96A6198284A718700CB7B55 /* InterfaceKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InterfaceKit; sourceTree = "<group>"; };
 		B96A6199284A718F00CB7B55 /* NetworkKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkKit; sourceTree = "<group>"; };
-		EC5C7ACC65D04B7A9091F925 /* ThemeAppEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeAppEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9C0BDDA130B7558300201352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = 777D65EB25379A23001029C4 /* Contributions */;
+		};
+		9C0BDDA230B7558300201352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Extensions/UserDefaultsExtensions.swift,
+				List/ContributionsStorage.swift,
+			);
+			target = 777D66512537A18D001029C4 /* ContributionsWidgetExtension */;
+		};
+		9C0BDDCA30B755A200201352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = 777D66512537A18D001029C4 /* ContributionsWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9C0BDD8B30B7558200201352 /* Contributions */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9C0BDDA130B7558300201352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 9C0BDDA230B7558300201352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Contributions; sourceTree = "<group>"; };
+		9C0BDDB930B755A100201352 /* ContributionsWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9C0BDDCA30B755A200201352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ContributionsWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		777D65E925379A23001029C4 /* Frameworks */ = {
@@ -149,45 +105,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7702E17E25CF2D76003ECC3D /* List */ = {
-			isa = PBXGroup;
-			children = (
-				7702E18925CF2DC9003ECC3D /* ContributionsList.swift */,
-				77B39CB725CF59B000B5D0B8 /* ContributionsListViewModel.swift */,
-				7761A6F42543BD82000871E3 /* ContributionsRow.swift */,
-				7761A6FA2543BDB6000871E3 /* ContributionsRowViewModel.swift */,
-				77A73F232C67BB6C000CA518 /* ContributionsStorage.swift */,
-			);
-			path = List;
-			sourceTree = "<group>";
-		};
-		771E3B4D253CEACD00984A0B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				771E3B4E253CEADD00984A0B /* ArrayExtensions.swift */,
-				771E3B59253CEBCE00984A0B /* DateExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		7771530C2E4E938700489A4A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7771530A2E4E922B00489A4A /* WidgetIntentConfiguration.swift */,
-				7771530D2E4E939100489A4A /* WidgetIntentTheme.swift */,
-				681E657708C44506A185E9DA /* ConfigurationAppIntent.swift */,
-				EC5C7ACC65D04B7A9091F925 /* ThemeAppEnum.swift */,
-				8932B9D35A4049ADBD35A798 /* UsernameEntity.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		777D65E325379A23001029C4 = {
 			isa = PBXGroup;
 			children = (
 				B96A6197284A718700CB7B55 /* Packages */,
-				777D65EE25379A23001029C4 /* Contributions */,
-				777D66572537A18D001029C4 /* ContributionsWidget */,
+				9C0BDD8B30B7558200201352 /* Contributions */,
+				9C0BDDB930B755A100201352 /* ContributionsWidget */,
 				777D65ED25379A23001029C4 /* Products */,
 				777D662825379D10001029C4 /* Frameworks */,
 			);
@@ -202,28 +125,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		777D65EE25379A23001029C4 /* Contributions */ = {
-			isa = PBXGroup;
-			children = (
-				777D65EF25379A23001029C4 /* ContributionsApp.swift */,
-				7702E17E25CF2D76003ECC3D /* List */,
-				77BF7B4A2543B38D006DA340 /* Settings */,
-				77BF7B492543B380006DA340 /* Guide */,
-				77BF7B482543B373006DA340 /* Extensions */,
-				77BF7B4C2543B3D1006DA340 /* Resources */,
-				777D65F525379A27001029C4 /* Preview Content */,
-			);
-			path = Contributions;
-			sourceTree = "<group>";
-		};
-		777D65F525379A27001029C4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				777D65F625379A27001029C4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		777D662825379D10001029C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,75 +132,6 @@
 				777D66552537A18D001029C4 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		777D66572537A18D001029C4 /* ContributionsWidget */ = {
-			isa = PBXGroup;
-			children = (
-				777D66582537A18D001029C4 /* ContributionsWidgetBundle.swift */,
-				771E3BA8253E423700984A0B /* ContributionsGraphWidget.swift */,
-				77BF7AE025435ECD006DA340 /* ContributionsGraphEntryView.swift */,
-				77BF7AE625435FB1006DA340 /* ContributionsGraphWidgetView.swift */,
-				77BF7AC925435329006DA340 /* ContributionsViewModel.swift */,
-				771E3BAE253E42BA00984A0B /* ContributionsProvider.swift */,
-				7771530C2E4E938700489A4A /* Models */,
-				771E3B4D253CEACD00984A0B /* Extensions */,
-				77BF7B512543B405006DA340 /* Resources */,
-			);
-			path = ContributionsWidget;
-			sourceTree = "<group>";
-		};
-		77BF7B482543B373006DA340 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				77BD1EAB2540EFB500830186 /* NetworkKitExtensions.swift */,
-				77B39CC125CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		77BF7B492543B380006DA340 /* Guide */ = {
-			isa = PBXGroup;
-			children = (
-				77BD1EB72540F60000830186 /* GuideView.swift */,
-				77BF7B3C2543B33A006DA340 /* StepView.swift */,
-				77BF7B422543B361006DA340 /* Step.swift */,
-			);
-			path = Guide;
-			sourceTree = "<group>";
-		};
-		77BF7B4A2543B38D006DA340 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				77BD1EA52540EF4300830186 /* SettingsItem.swift */,
-				77BD1E9F2540EF0800830186 /* SettingsRow.swift */,
-				777D65F125379A23001029C4 /* SettingsView.swift */,
-				779B0F05253F8DA40046B7E1 /* SettingsViewModel.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		77BF7B4C2543B3D1006DA340 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				777D65F325379A27001029C4 /* Assets.xcassets */,
-				774E5BDC2FA5F45B00AADE79 /* Localizable.xcstrings */,
-				774E5BE02FA5F45B00AADE79 /* InfoPlist.xcstrings */,
-				777D65F825379A27001029C4 /* Info.plist */,
-				7021D7BFAB3F485CABF3C946 /* Contributions.entitlements */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		77BF7B512543B405006DA340 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				777D665B2537A18F001029C4 /* Assets.xcassets */,
-				774E5BDE2FA5F45B00AADE79 /* Localizable.xcstrings */,
-				777D665D2537A18F001029C4 /* Info.plist */,
-				441AD52830B54A62933247A9 /* ContributionsWidget.entitlements */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		B96A6197284A718700CB7B55 /* Packages */ = {
@@ -328,6 +160,9 @@
 			dependencies = (
 				777D66612537A18F001029C4 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				9C0BDD8B30B7558200201352 /* Contributions */,
+			);
 			name = Contributions;
 			packageProductDependencies = (
 				BE67BFC226DBBF3B00B09345 /* Kingfisher */,
@@ -349,6 +184,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9C0BDDB930B755A100201352 /* ContributionsWidget */,
 			);
 			name = ContributionsWidgetExtension;
 			packageProductDependencies = (
@@ -406,10 +244,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				777D65F725379A27001029C4 /* Preview Assets.xcassets in Resources */,
-				774E5BE12FA5F45B00AADE79 /* InfoPlist.xcstrings in Resources */,
-				774E5BDD2FA5F45B00AADE79 /* Localizable.xcstrings in Resources */,
-				777D65F425379A27001029C4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,8 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				777D665C2537A18F001029C4 /* Assets.xcassets in Resources */,
-				774E5BDF2FA5F45B00AADE79 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,21 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7761A6F52543BD82000871E3 /* ContributionsRow.swift in Sources */,
-				7761A6FB2543BDB6000871E3 /* ContributionsRowViewModel.swift in Sources */,
-				777D65F225379A23001029C4 /* SettingsView.swift in Sources */,
-				77BD1EB82540F60000830186 /* GuideView.swift in Sources */,
-				77BD1EA02540EF0800830186 /* SettingsRow.swift in Sources */,
-				777D65F025379A23001029C4 /* ContributionsApp.swift in Sources */,
-				77BF7B3D2543B33B006DA340 /* StepView.swift in Sources */,
-				779B0F06253F8DA40046B7E1 /* SettingsViewModel.swift in Sources */,
-				77B39CC225CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift in Sources */,
-				77BF7B432543B361006DA340 /* Step.swift in Sources */,
-				77B39CB825CF59B000B5D0B8 /* ContributionsListViewModel.swift in Sources */,
-				77BD1EAC2540EFB500830186 /* NetworkKitExtensions.swift in Sources */,
-				77A73F242C67BB6C000CA518 /* ContributionsStorage.swift in Sources */,
-				7702E18A25CF2DC9003ECC3D /* ContributionsList.swift in Sources */,
-				77BD1EA62540EF4300830186 /* SettingsItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,21 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7771530B2E4E923000489A4A /* WidgetIntentConfiguration.swift in Sources */,
-				77BF7AE125435ECD006DA340 /* ContributionsGraphEntryView.swift in Sources */,
-				771E3B5A253CEBCE00984A0B /* DateExtensions.swift in Sources */,
-				777D66592537A18D001029C4 /* ContributionsWidgetBundle.swift in Sources */,
-				771E3B54253CEB7600984A0B /* ArrayExtensions.swift in Sources */,
-				F4A146922B6505AB00354A8B /* ContributionsGraphWidget.swift in Sources */,
-				7771530E2E4E939400489A4A /* WidgetIntentTheme.swift in Sources */,
-				77BF7ACF2543537E006DA340 /* ContributionsViewModel.swift in Sources */,
-				77BF7AE725435FB1006DA340 /* ContributionsGraphWidgetView.swift in Sources */,
-				771E3BAF253E42BA00984A0B /* ContributionsProvider.swift in Sources */,
-				EDDE9FC91D604E43B5D54E1F /* ConfigurationAppIntent.swift in Sources */,
-				826C74498C9E49CF82D8BE1F /* ThemeAppEnum.swift in Sources */,
-				EB7FE604C91D44BA8247479A /* UsernameEntity.swift in Sources */,
-				64FF780B36374187AD59D1C1 /* ContributionsStorage.swift in Sources */,
-				05AD13EC33344E73A928FABB /* UserDefaultsExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,11 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Contributions/Contributions.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Contributions/Resources/Contributions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Contributions/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Contributions/Info.plist;
+				INFOPLIST_FILE = Contributions/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -645,11 +446,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Contributions/Contributions.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Contributions/Resources/Contributions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Contributions/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Contributions/Info.plist;
+				INFOPLIST_FILE = Contributions/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -669,9 +469,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = ContributionsWidget/ContributionsWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ContributionsWidget/Resources/ContributionsWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ContributionsWidget/Info.plist;
+				INFOPLIST_FILE = ContributionsWidget/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,9 +490,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = ContributionsWidget/ContributionsWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ContributionsWidget/Resources/ContributionsWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ContributionsWidget/Info.plist;
+				INFOPLIST_FILE = ContributionsWidget/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
