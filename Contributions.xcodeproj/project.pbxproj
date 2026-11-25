@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB7FE604C91D44BA8247479A /* UsernameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B9D35A4049ADBD35A798 /* UsernameEntity.swift */; };
-		826C74498C9E49CF82D8BE1F /* ThemeAppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7ACC65D04B7A9091F925 /* ThemeAppEnum.swift */; };
-		EDDE9FC91D604E43B5D54E1F /* ConfigurationAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681E657708C44506A185E9DA /* ConfigurationAppIntent.swift */; };
-		64FF780B36374187AD59D1C1 /* ContributionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A73F232C67BB6C000CA518 /* ContributionsStorage.swift */; };
 		05AD13EC33344E73A928FABB /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B39CC125CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift */; };
+		64FF780B36374187AD59D1C1 /* ContributionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A73F232C67BB6C000CA518 /* ContributionsStorage.swift */; };
 		7702E18A25CF2DC9003ECC3D /* ContributionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7702E18925CF2DC9003ECC3D /* ContributionsList.swift */; };
 		771E3B54253CEB7600984A0B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E3B4E253CEADD00984A0B /* ArrayExtensions.swift */; };
 		771E3B5A253CEBCE00984A0B /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E3B59253CEBCE00984A0B /* DateExtensions.swift */; };
@@ -45,11 +42,14 @@
 		77BF7AE725435FB1006DA340 /* ContributionsGraphWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF7AE625435FB1006DA340 /* ContributionsGraphWidgetView.swift */; };
 		77BF7B3D2543B33B006DA340 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF7B3C2543B33A006DA340 /* StepView.swift */; };
 		77BF7B432543B361006DA340 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF7B422543B361006DA340 /* Step.swift */; };
+		826C74498C9E49CF82D8BE1F /* ThemeAppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7ACC65D04B7A9091F925 /* ThemeAppEnum.swift */; };
 		B96A619B284A719A00CB7B55 /* InterfaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = B96A619A284A719A00CB7B55 /* InterfaceKit */; };
 		B96A619D284A719A00CB7B55 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = B96A619C284A719A00CB7B55 /* NetworkKit */; };
 		B96A619F284A71A100CB7B55 /* InterfaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = B96A619E284A71A100CB7B55 /* InterfaceKit */; };
 		B96A61A1284A71A100CB7B55 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = B96A61A0284A71A100CB7B55 /* NetworkKit */; };
 		BE67BFC326DBBF3B00B09345 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BE67BFC226DBBF3B00B09345 /* Kingfisher */; };
+		EB7FE604C91D44BA8247479A /* UsernameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B9D35A4049ADBD35A798 /* UsernameEntity.swift */; };
+		EDDE9FC91D604E43B5D54E1F /* ConfigurationAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681E657708C44506A185E9DA /* ConfigurationAppIntent.swift */; };
 		F4A146922B6505AB00354A8B /* ContributionsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E3BA8253E423700984A0B /* ContributionsGraphWidget.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,11 +78,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7021D7BFAB3F485CABF3C946 /* Contributions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contributions.entitlements; sourceTree = "<group>"; };
 		441AD52830B54A62933247A9 /* ContributionsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContributionsWidget.entitlements; sourceTree = "<group>"; };
-		8932B9D35A4049ADBD35A798 /* UsernameEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameEntity.swift; sourceTree = "<group>"; };
-		EC5C7ACC65D04B7A9091F925 /* ThemeAppEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeAppEnum.swift; sourceTree = "<group>"; };
 		681E657708C44506A185E9DA /* ConfigurationAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationAppIntent.swift; sourceTree = "<group>"; };
+		7021D7BFAB3F485CABF3C946 /* Contributions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contributions.entitlements; sourceTree = "<group>"; };
 		7702E18925CF2DC9003ECC3D /* ContributionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsList.swift; sourceTree = "<group>"; };
 		771E3B4E253CEADD00984A0B /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		771E3B59253CEBCE00984A0B /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
@@ -120,8 +118,10 @@
 		77BF7AE625435FB1006DA340 /* ContributionsGraphWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsGraphWidgetView.swift; sourceTree = "<group>"; };
 		77BF7B3C2543B33A006DA340 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		77BF7B422543B361006DA340 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		8932B9D35A4049ADBD35A798 /* UsernameEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameEntity.swift; sourceTree = "<group>"; };
 		B96A6198284A718700CB7B55 /* InterfaceKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InterfaceKit; sourceTree = "<group>"; };
 		B96A6199284A718F00CB7B55 /* NetworkKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkKit; sourceTree = "<group>"; };
+		EC5C7ACC65D04B7A9091F925 /* ThemeAppEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeAppEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,7 +478,6 @@
 			targetProxy = 777D66602537A18F001029C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
 
 /* Begin XCBuildConfiguration section */
 		777D660F25379A28001029C4 /* Debug */ = {
