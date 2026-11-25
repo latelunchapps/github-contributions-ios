@@ -5,7 +5,6 @@
 //  Created by Ander Goig on 19/10/2020.
 //
 
-import Intents
 import SwiftUI
 import WidgetKit
 
@@ -17,7 +16,7 @@ struct ContributionsGraphWidget: Widget {
     // MARK: - View
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: ContributionsProvider()) { entry in
+        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: ContributionsProvider()) { entry in
             ContributionsGraphEntryView(entry: entry)
         }
         .configurationDisplayName("widget-graph-display-name")

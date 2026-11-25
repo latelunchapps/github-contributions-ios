@@ -12,9 +12,9 @@ struct WidgetIntentConfiguration: Sendable {
     let theme: WidgetIntentTheme
     let isPureBlackEnabled: Bool
 
-    init(_ intent: ConfigurationIntent) {
-        self.username = intent.username
+    init(_ intent: ConfigurationAppIntent) {
+        self.username = intent.user?.id ?? intent.username
         self.theme = WidgetIntentTheme(theme: intent.theme)
-        self.isPureBlackEnabled = intent.pureBlack?.boolValue ?? false
+        self.isPureBlackEnabled = intent.pureBlack
     }
 }

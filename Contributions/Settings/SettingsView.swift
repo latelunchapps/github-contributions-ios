@@ -47,7 +47,7 @@ struct SettingsView: View {
         .scrollContentBackground(.hidden)
         .background(Color.backgroundPrimary)
         .navigationTitle("settings-title")
-        .inlineLargeToolbarTitle()
+        .toolbarTitleDisplayMode(.inlineLarge)
         .sheet(isPresented: $isGuidePresented) {
             NavigationView {
                 GuideView()

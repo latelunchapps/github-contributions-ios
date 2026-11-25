@@ -2,7 +2,7 @@
 
 Guidance for Claude Code when working in this repository.
 
-Contribution Graphs for GitHub (`github-contributions-ios`) is a public iOS app (iOS 16.6+, Xcode 26+, Swift 6) that shows GitHub contribution graphs in the app and on the Home Screen.
+Contribution Graphs for GitHub (`github-contributions-ios`) is a public iOS app (iOS 17+, Xcode 26+, Swift 6) that shows GitHub contribution graphs in the app and on the Home Screen.
 
 There is no workspace and no CocoaPods: open `Contributions.xcodeproj`. Dependencies are Swift packages, including two local packages in the repo root: `NetworkKit` (GitHub data, SwiftSoup) and `InterfaceKit` (shared UI).
 

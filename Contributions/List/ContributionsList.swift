@@ -57,7 +57,7 @@ struct ContributionsList: View {
         .background(Color.backgroundPrimary)
         .ignoresSafeArea(.keyboard)
         .navigationTitle("app-title")
-        .inlineLargeToolbarTitle()
+        .toolbarTitleDisplayMode(.inlineLarge)
         .toolbar {
             Button(action: { showsAlert = true }) {
                 Image(systemName: "plus")
@@ -77,30 +77,15 @@ struct ContributionsList: View {
         })
     }
 
-    @ViewBuilder
     private var emptyView: some View {
-        if #available(iOS 17.0, *) {
-            ContentUnavailableView {
-                Label("contributions-empty-title", systemImage: "plus.app.fill")
-            } description: {
-                Text("contributions-empty-subtitle")
-            } actions: {
-                Button("contributions-add-accept", action: { showsAlert = true })
-                    .buttonStyle(.bordered)
-                    .font(.headline)
-            }
-        } else {
-            VStack(spacing: 6) {
-                Text("contributions-empty-title")
-                    .font(.headline)
-                    .foregroundColor(.primary)
-
-                Text("contributions-empty-subtitle")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-            .multilineTextAlignment(.center)
-            .padding(.horizontal, 44)
+        ContentUnavailableView {
+            Label("contributions-empty-title", systemImage: "plus.app.fill")
+        } description: {
+            Text("contributions-empty-subtitle")
+        } actions: {
+            Button("contributions-add-accept", action: { showsAlert = true })
+                .buttonStyle(.bordered)
+                .font(.headline)
         }
     }
 

@@ -9,7 +9,6 @@ import NetworkKit
 import SwiftUI
 
 enum WidgetIntentTheme: Int, Sendable {
-    case unknown
     case green
     case blue
     case red
@@ -17,9 +16,8 @@ enum WidgetIntentTheme: Int, Sendable {
     case yellow
     case inverted
 
-    init(theme: Theme) {
+    init(theme: ThemeAppEnum) {
         switch theme {
-        case .unknown: self = .unknown
         case .green: self = .green
         case .blue: self = .blue
         case .red: self = .red
@@ -41,7 +39,6 @@ enum WidgetIntentTheme: Int, Sendable {
 
     private var firstLevelColor: Color {
         switch self {
-        case .unknown: return .greenLevel1
         case .green: return .greenLevel1
         case .blue: return .blueLevel1
         case .red: return .redLevel1
@@ -53,7 +50,6 @@ enum WidgetIntentTheme: Int, Sendable {
 
     private var secondLevelColor: Color {
         switch self {
-        case .unknown: return .greenLevel2
         case .green: return .greenLevel2
         case .blue: return .blueLevel2
         case .red: return .redLevel2
@@ -65,7 +61,6 @@ enum WidgetIntentTheme: Int, Sendable {
 
     private var thirdLevelColor: Color {
         switch self {
-        case .unknown: return .greenLevel3
         case .green: return .greenLevel3
         case .blue: return .blueLevel3
         case .red: return .redLevel3
@@ -77,7 +72,6 @@ enum WidgetIntentTheme: Int, Sendable {
 
     private var fourthLevelColor: Color {
         switch self {
-        case .unknown: return .greenLevel4
         case .green: return .greenLevel4
         case .blue: return .blueLevel4
         case .red: return .redLevel4

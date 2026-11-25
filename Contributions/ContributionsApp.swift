@@ -14,7 +14,7 @@ struct ContributionsApp: App {
         WindowGroup {
             TabView {
                 NavigationStack {
-                    ContributionsList(viewModel: .init(storage: DefaultContributionsStorage()))
+                    ContributionsList(viewModel: .init(storage: DefaultContributionsStorage(migratingFrom: .standard)))
                 }
                 .tabItem {
                     Image(systemName: "square.grid.3x3.fill")
