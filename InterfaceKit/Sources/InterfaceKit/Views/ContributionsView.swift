@@ -18,6 +18,10 @@ public struct ContributionsView: View {
     let topTrailingText: String?
     let emptyText: String?
 
+    /// The GitHub mark's size, scaled with the caption it sits next to.
+    @ScaledMetric(relativeTo: .caption2)
+    private var markSize = 12.0
+
     // MARK: - View
 
     public var body: some View {
@@ -26,8 +30,9 @@ public struct ContributionsView: View {
                 HStack(spacing: 6) {
                     Image(.gitHubMark)
                         .resizable()
-                        .frame(width: 12, height: 12)
+                        .frame(width: markSize, height: markSize)
                         .unredacted()
+                        .accessibilityHidden(true)
 
                     topLeadingText.map(Text.init)
                 }
@@ -46,7 +51,7 @@ public struct ContributionsView: View {
 
                 Label(emptyText ?? "", systemImage: "info.circle")
                     .font(.callout.weight(.semibold))
-                    .foregroundColor(.blue)
+                    .foregroundStyle(.blue)
                     .frame(maxWidth: .infinity)
                     .unredacted()
 
