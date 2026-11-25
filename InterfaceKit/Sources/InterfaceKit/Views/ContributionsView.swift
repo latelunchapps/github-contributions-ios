@@ -49,13 +49,30 @@ public struct ContributionsView: View {
             } else {
                 Spacer()
 
-                Label(emptyText ?? "", systemImage: "info.circle")
+                emptyLabel
                     .font(.callout.weight(.semibold))
                     .foregroundStyle(.blue)
                     .frame(maxWidth: .infinity)
                     .unredacted()
 
                 Spacer()
+            }
+        }
+    }
+
+    /// `emptyText` beside an info icon, or, where that doesn't fit (a small widget), centered under it and shrunk to fit.
+    private var emptyLabel: some View {
+        ViewThatFits(in: .vertical) {
+            Label(emptyText ?? "", systemImage: "info.circle")
+
+            VStack(spacing: 4) {
+                Image(systemName: "info.circle")
+                    .imageScale(.small)
+                    .accessibilityHidden(true)
+
+                Text(emptyText ?? "")
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.5)
             }
         }
     }

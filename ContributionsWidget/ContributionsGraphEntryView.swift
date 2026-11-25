@@ -51,11 +51,18 @@ struct ContributionsGraphEntryView: View {
             ContributionsGrid(calendar: calendar, spacing: 0.2)
                 .redacted(reason: entry.showPlaceholders ? .placeholder : .init())
         } else {
-            Text(LocalizedStringKey(entry.showError ? "contributions-fetch-error" : "contributions-empty-text"))
-                .font(.caption)
-                .multilineTextAlignment(.center)
-                .minimumScaleFactor(0.8)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            Group {
+                if entry.showError {
+                    Text("contributions-fetch-error")
+                } else {
+                    // The Lock Screen has no Edit Widget menu, so it says how to reach the configuration there.
+                    Text("contributions-empty-text-lock-screen")
+                }
+            }
+            .font(.caption)
+            .multilineTextAlignment(.center)
+            .minimumScaleFactor(0.8)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 }
