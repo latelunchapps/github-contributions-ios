@@ -33,7 +33,7 @@ Guidelines for bug reports:
    reported.
 
 2. **Check if the issue has been fixed** &mdash; try to reproduce it using the
-   latest `master` or development branch in the repository.
+   latest default or development branch in the repository.
 
 3. **Isolate the problem** &mdash; create a [reduced test
    case](http://css-tricks.com/reduced-test-cases/) and a live example.
@@ -86,6 +86,10 @@ project's developers might not want to merge into the project.
 
 Please adhere to the coding conventions used throughout a project (indentation,
 accurate comments, etc.) and any other requirements (such as test coverage).
+
+Please **do not** change version or build numbers. Releases take their version
+from a `vX.Y.Z` tag and their build number from Xcode Cloud (see the
+[README](README.md#releases)).
 
 Follow this process if you'd like your work considered for inclusion in the
 project:

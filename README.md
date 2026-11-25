@@ -21,6 +21,16 @@ Stay on top of your GitHub contributions, right from your iOS Home Screen.
 - iOS 16.6+
 - Xcode 26.0+
 
+## Releases
+
+Releasing is one step: push an annotated `vX.Y.Z` tag on the default branch.
+
+```bash
+git tag -a vX.Y.Z -m "vX.Y.Z" && git push origin --follow-tags
+```
+
+Xcode Cloud archives the tag and uploads it to App Store Connect. `ci_scripts/ci_pre_xcodebuild.sh` sets the version from the tag and the build number from Xcode Cloud's counter (`CI_BUILD_NUMBER`). The project holds only the placeholders `0.0.0` / `1`, so local builds report version 0.0.0 (1) on purpose and there are no version-bump commits. Don't change version or build numbers in a pull request.
+
 ## Contributing
 
 If you have feature requests or bug reports, feel free to send pull requests or [open an issue](https://github.com/latelunchapps/github-contributions-ios/issues/new).
