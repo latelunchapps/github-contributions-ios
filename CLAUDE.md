@@ -49,7 +49,7 @@ Code shared with the widget lives in `Contributions/` and reaches the widget onl
 
 ## Releases and versioning
 
-Releasing is one step: an annotated `vX.Y.Z` tag on the default branch, pushed with `git push origin --follow-tags`. A lightweight tag isn't pushed by `--follow-tags`, so no build starts. Legacy tags (`1.6.2` and earlier) are bare versions. They never start a build.
+Releasing is one step: an annotated `vX.Y.Z` tag on the default branch, pushed with `git push origin --follow-tags`. A lightweight tag isn't pushed by `--follow-tags`, so no build starts. Legacy tags (`1.6.1` and earlier) are bare versions. They never start a build.
 
 Release builds run on **Xcode Cloud**. The workflow is configured in App Store Connect and Xcode, not in the repo:
 - start condition: Tag Changes, tags beginning with `v` (never a branch trigger, and no pull-request workflows);

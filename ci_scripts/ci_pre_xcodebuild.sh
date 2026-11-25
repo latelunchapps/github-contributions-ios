@@ -27,7 +27,7 @@ if [ -z "$tag" ]; then
   exit 1
 fi
 
-# Require the leading `v`: the legacy tags (`1.6.2` and earlier) are bare
+# Require the leading `v`: the legacy tags (`1.6.1` and earlier) are bare
 # versions, and must never start a release build.
 version="${tag#v}"
 if [ "$version" = "$tag" ] || ! printf '%s' "$version" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
