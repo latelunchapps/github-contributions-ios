@@ -8,7 +8,7 @@ import AppIntents
 /// The widget's theme in its App Intents configuration.
 ///
 /// The system doesn't carry SiriKit enum values over to an `AppEnum`,
-/// so widgets configured before iOS 17 start on the default theme after they migrate.
+/// so widgets configured in versions before 1.7 start on the default theme after they migrate.
 enum ThemeAppEnum: String, AppEnum {
     case green
     case blue

@@ -32,10 +32,7 @@
 		777D66592537A18D001029C4 /* ContributionsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D66582537A18D001029C4 /* ContributionsWidgetBundle.swift */; };
 		777D665C2537A18F001029C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777D665B2537A18F001029C4 /* Assets.xcassets */; };
 		777D66622537A18F001029C4 /* ContributionsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 777D66522537A18D001029C4 /* ContributionsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7786F5462FA67CB000088E85 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786F5452FA67CA800088E85 /* ViewExtensions.swift */; };
 		779B0F06253F8DA40046B7E1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B0F05253F8DA40046B7E1 /* SettingsViewModel.swift */; };
-		77A722D92546620600B6064B /* GitHubContributionsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 77A722DC2546620600B6064B /* GitHubContributionsWidget.intentdefinition */; };
-		77A722DA2546620600B6064B /* GitHubContributionsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 77A722DC2546620600B6064B /* GitHubContributionsWidget.intentdefinition */; };
 		77A73F242C67BB6C000CA518 /* ContributionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A73F232C67BB6C000CA518 /* ContributionsStorage.swift */; };
 		77B39CB825CF59B000B5D0B8 /* ContributionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B39CB725CF59B000B5D0B8 /* ContributionsListViewModel.swift */; };
 		77B39CC225CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B39CC125CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift */; };
@@ -86,7 +83,6 @@
 		8932B9D35A4049ADBD35A798 /* UsernameEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameEntity.swift; sourceTree = "<group>"; };
 		EC5C7ACC65D04B7A9091F925 /* ThemeAppEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeAppEnum.swift; sourceTree = "<group>"; };
 		681E657708C44506A185E9DA /* ConfigurationAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationAppIntent.swift; sourceTree = "<group>"; };
-		1CC490D22819102200C3EC87 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/GitHubContributionsWidget.strings; sourceTree = "<group>"; };
 		7702E18925CF2DC9003ECC3D /* ContributionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsList.swift; sourceTree = "<group>"; };
 		771E3B4E253CEADD00984A0B /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		771E3B59253CEBCE00984A0B /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
@@ -111,9 +107,7 @@
 		777D66582537A18D001029C4 /* ContributionsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsWidgetBundle.swift; sourceTree = "<group>"; };
 		777D665B2537A18F001029C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		777D665D2537A18F001029C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7786F5452FA67CA800088E85 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		779B0F05253F8DA40046B7E1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		77A722DB2546620600B6064B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/GitHubContributionsWidget.intentdefinition; sourceTree = "<group>"; };
 		77A73F232C67BB6C000CA518 /* ContributionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsStorage.swift; sourceTree = "<group>"; };
 		77B39CB725CF59B000B5D0B8 /* ContributionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsListViewModel.swift; sourceTree = "<group>"; };
 		77B39CC125CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
@@ -128,7 +122,6 @@
 		77BF7B422543B361006DA340 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		B96A6198284A718700CB7B55 /* InterfaceKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InterfaceKit; sourceTree = "<group>"; };
 		B96A6199284A718F00CB7B55 /* NetworkKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkKit; sourceTree = "<group>"; };
-		BE67BFC726DBC57600B09345 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/GitHubContributionsWidget.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,7 +254,6 @@
 			children = (
 				77BD1EAB2540EFB500830186 /* NetworkKitExtensions.swift */,
 				77B39CC125CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift */,
-				7786F5452FA67CA800088E85 /* ViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -304,7 +296,6 @@
 			children = (
 				777D665B2537A18F001029C4 /* Assets.xcassets */,
 				774E5BDE2FA5F45B00AADE79 /* Localizable.xcstrings */,
-				77A722DC2546620600B6064B /* GitHubContributionsWidget.intentdefinition */,
 				777D665D2537A18F001029C4 /* Info.plist */,
 				441AD52830B54A62933247A9 /* ContributionsWidget.entitlements */,
 			);
@@ -442,7 +433,6 @@
 				7761A6FB2543BDB6000871E3 /* ContributionsRowViewModel.swift in Sources */,
 				777D65F225379A23001029C4 /* SettingsView.swift in Sources */,
 				77BD1EB82540F60000830186 /* GuideView.swift in Sources */,
-				77A722D92546620600B6064B /* GitHubContributionsWidget.intentdefinition in Sources */,
 				77BD1EA02540EF0800830186 /* SettingsRow.swift in Sources */,
 				777D65F025379A23001029C4 /* ContributionsApp.swift in Sources */,
 				77BF7B3D2543B33B006DA340 /* StepView.swift in Sources */,
@@ -450,7 +440,6 @@
 				77B39CC225CF5ACF00B5D0B8 /* UserDefaultsExtensions.swift in Sources */,
 				77BF7B432543B361006DA340 /* Step.swift in Sources */,
 				77B39CB825CF59B000B5D0B8 /* ContributionsListViewModel.swift in Sources */,
-				7786F5462FA67CB000088E85 /* ViewExtensions.swift in Sources */,
 				77BD1EAC2540EFB500830186 /* NetworkKitExtensions.swift in Sources */,
 				77A73F242C67BB6C000CA518 /* ContributionsStorage.swift in Sources */,
 				7702E18A25CF2DC9003ECC3D /* ContributionsList.swift in Sources */,
@@ -471,7 +460,6 @@
 				7771530E2E4E939400489A4A /* WidgetIntentTheme.swift in Sources */,
 				77BF7ACF2543537E006DA340 /* ContributionsViewModel.swift in Sources */,
 				77BF7AE725435FB1006DA340 /* ContributionsGraphWidgetView.swift in Sources */,
-				77A722DA2546620600B6064B /* GitHubContributionsWidget.intentdefinition in Sources */,
 				771E3BAF253E42BA00984A0B /* ContributionsProvider.swift in Sources */,
 				EDDE9FC91D604E43B5D54E1F /* ConfigurationAppIntent.swift in Sources */,
 				826C74498C9E49CF82D8BE1F /* ThemeAppEnum.swift in Sources */,
@@ -491,18 +479,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		77A722DC2546620600B6064B /* GitHubContributionsWidget.intentdefinition */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77A722DB2546620600B6064B /* Base */,
-				BE67BFC726DBC57600B09345 /* es */,
-				1CC490D22819102200C3EC87 /* ja */,
-			);
-			name = GitHubContributionsWidget.intentdefinition;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		777D660F25379A28001029C4 /* Debug */ = {
@@ -561,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 0.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -626,7 +602,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 0.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
