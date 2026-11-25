@@ -21,6 +21,6 @@ struct ContributionsGraphWidget: Widget {
         }
         .configurationDisplayName("widget-graph-display-name")
         .description("widget-graph-description")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .accessoryRectangular])
     }
 }
