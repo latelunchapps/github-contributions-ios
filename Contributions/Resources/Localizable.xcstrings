@@ -216,7 +216,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No contributions"
+            "value" : "Contributionsがありません"
           }
         }
       }
@@ -260,7 +260,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "について"
+            "value" : "このアプリについて"
           }
         }
       }
@@ -327,7 +327,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Feedback"
+            "value" : "お問い合わせ"
           }
         }
       }
@@ -371,7 +371,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open Source"
+            "value" : "オープンソース"
           }
         }
       }
@@ -415,7 +415,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rate the App"
+            "value" : "アプリを評価"
           }
         }
       }
@@ -459,7 +459,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Share"
+            "value" : "共有"
           }
         }
       }
@@ -503,7 +503,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Widget Setup"
+            "value" : "ウィジェットの設定"
           }
         }
       }
@@ -569,7 +569,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Step %u"
+            "value" : "ステップ%u"
           }
         }
       }
