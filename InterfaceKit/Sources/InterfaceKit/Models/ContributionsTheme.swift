@@ -7,9 +7,10 @@ import SwiftUI
 
 /// The colors of a contribution graph.
 ///
-/// Each theme is a single-hue ramp with evenly spaced lightness steps, defined for light and dark appearances in
-/// `Colors.xcassets`. In light mode the steps run from light to dark, in dark mode from dim to bright, so more
-/// contributions always stand out more from the background. Days without contributions share one neutral gray.
+/// Each theme is a single-hue ramp defined for light and dark appearances in `Colors.xcassets`. In light mode the
+/// steps run from light to dark, starting with a pale tint like GitHub's; in dark mode they run from dim to bright
+/// in even steps. Either way, more contributions always stand out more from the background. Days without
+/// contributions share one neutral gray.
 public enum ContributionsTheme: CaseIterable, Sendable {
     case green
     case blue
