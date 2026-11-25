@@ -49,7 +49,7 @@ Code shared with the widget lives in `Contributions/` and reaches the widget onl
 
 ## Releases and versioning
 
-Releasing is one step: an annotated `vX.Y.Z` tag on the default branch, pushed with `git push origin --follow-tags`. A lightweight tag isn't pushed by `--follow-tags`, so no build starts. Legacy tags (`1.6.2` and earlier) are bare versions. They never start a build.
+Releasing is one step: an annotated `vX.Y.Z` tag on the default branch, pushed with `git push origin --follow-tags`. A lightweight tag isn't pushed by `--follow-tags`, so no build starts. Legacy tags (`1.6.1` and earlier) are bare versions. They never start a build.
 
 Release builds run on **Xcode Cloud**. The workflow is configured in App Store Connect and Xcode, not in the repo:
 - start condition: Tag Changes, tags beginning with `v` (never a branch trigger, and no pull-request workflows);
@@ -58,7 +58,7 @@ Release builds run on **Xcode Cloud**. The workflow is configured in App Store C
 
 `ci_scripts/ci_pre_xcodebuild.sh` (next to `Contributions.xcodeproj`, mode `100755`, in no target) sets both numbers:
 - the **marketing version** from `CI_TAG`, which must be `vX.Y.Z`;
-- the **build number** from `CI_BUILD_NUMBER`, Xcode Cloud's own counter. Its Next Build Number (App Store Connect → Xcode Cloud → Settings → Build Number) must be above 21, the last build shipped before Xcode Cloud. Never set it back below a shipped number.
+- the **build number** from `CI_BUILD_NUMBER`, Xcode Cloud's own counter. Its Next Build Number (App Store Connect → Xcode Cloud → Settings → Build Number) must be above 21, the last build number used before Xcode Cloud. 21 was 1.6.2's, which never shipped; the last build that shipped is 1.6.1 (20). Never set it back to a number already used.
 
 It writes both over the project-level `MARKETING_VERSION` / `CURRENT_PROJECT_VERSION` placeholders (`0.0.0` / `1`) in the throwaway clone, checks that every one changed, and refuses to run unless `CI_XCODE_CLOUD` is `TRUE`. This repo is public, so the script must never hold a secret. It needs none: signing is automatic in App Store Connect.
 
