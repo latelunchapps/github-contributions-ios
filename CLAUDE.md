@@ -41,6 +41,12 @@ xcodebuild -project Contributions.xcodeproj -scheme Widget -destination "$DEST" 
 
 Schemes: `App`, `Widget`. Do not confuse the `App` scheme with the `Contributions` target name.
 
+`Contributions/` and `ContributionsWidget/` are synchronized folders (`PBXFileSystemSynchronizedRootGroup`), not groups. Every file under each one belongs to that folder's target. Create, move, and delete files on disk, and never add file references or build-file entries to `project.pbxproj`.
+
+Each target keeps its non-Swift files in a `Resources/` subfolder: `Info.plist`, the `.entitlements` file, `Assets.xcassets`, and the `.xcstrings` catalogs. `INFOPLIST_FILE` and `CODE_SIGN_ENTITLEMENTS` point there. Each folder's exception set removes its own `Resources/Info.plist` from the target, so the plist isn't copied in as a resource.
+
+Code shared with the widget lives in `Contributions/` and reaches the widget only through the `Contributions` folder's exception set for the `ContributionsWidgetExtension` target. Today that set lists `List/ContributionsStorage.swift` and `Extensions/UserDefaultsExtensions.swift`. To share another file, add its path, relative to `Contributions/`, to that set's `membershipExceptions` (in Xcode: tick the widget under Target Membership). If you move or rename a shared file on disk, update its path in the set too, or the widget stops compiling it.
+
 ## Releases and versioning
 
 Releasing is one step: an annotated `vX.Y.Z` tag on the default branch, pushed with `git push origin --follow-tags`. A lightweight tag isn't pushed by `--follow-tags`, so no build starts. Legacy tags (`1.6.2` and earlier) are bare versions. They never start a build.
