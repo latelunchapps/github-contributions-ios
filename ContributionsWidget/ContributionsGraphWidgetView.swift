@@ -12,16 +12,15 @@ struct ContributionsGraphWidgetView: View {
     // MARK: - Properties
 
     let viewModel: ContributionsViewModel
-    let rowsCount: Int
-    let columnsCount: Int
+    let weekRows: Int
 
     // MARK: - View
 
     var body: some View {
         ContributionsView(
-            rowsCount: rowsCount,
-            columnsCount: columnsCount,
-            colors: viewModel.contributionLevels(rowsCount: rowsCount, columnsCount: columnsCount).map { $0.map(viewModel.theme.color) },
+            calendar: viewModel.calendar,
+            theme: viewModel.theme,
+            weekRows: weekRows,
             topLeadingText: viewModel.topLeadingText,
             emptyText: NSLocalizedString("contributions-empty-text", comment: "")
         )

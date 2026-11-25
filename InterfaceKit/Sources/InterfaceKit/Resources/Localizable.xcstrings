@@ -1,0 +1,54 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "contributions-graph" : {
+      "comment" : "VoiceOver label of the contribution graph.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contribution graph"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gráfico de contribuciones"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コントリビューショングラフ"
+          }
+        }
+      }
+    },
+    "contributions-graph-active-days %lld %lld" : {
+      "comment" : "VoiceOver value of the contribution graph. The first number is the days with contributions, the second the days the graph shows.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contributions on %1$lld of the last %2$lld days"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contribuciones en %1$lld de los últimos %2$lld días"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "過去%2$lld日のうち%1$lld日にコントリビューション"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

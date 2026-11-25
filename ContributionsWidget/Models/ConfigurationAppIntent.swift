@@ -34,11 +34,19 @@ struct ConfigurationAppIntent: WidgetConfigurationIntent, CustomIntentMigratedAp
     @Parameter(title: "widget-configuration-pure-black", default: false)
     var pureBlack: Bool
 
+    /// The Lock Screen draws its widgets in a single system tint over the wallpaper, so neither the theme nor the
+    /// background applies there and the configuration only offers the username.
     static var parameterSummary: some ParameterSummary {
-        Summary {
-            \.$user
-            \.$theme
-            \.$pureBlack
+        When(widgetFamily: .equalTo, .accessoryRectangular) {
+            Summary {
+                \.$user
+            }
+        } otherwise: {
+            Summary {
+                \.$user
+                \.$theme
+                \.$pureBlack
+            }
         }
     }
 }

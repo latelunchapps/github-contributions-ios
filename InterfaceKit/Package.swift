@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "InterfaceKit",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v17),
     ],
