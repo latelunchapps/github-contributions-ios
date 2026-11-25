@@ -17,4 +17,11 @@ struct WidgetIntentConfiguration: Sendable {
         self.theme = WidgetIntentTheme(theme: intent.theme)
         self.isPureBlackEnabled = intent.pureBlack?.boolValue ?? false
     }
+
+    @available(iOSApplicationExtension 17.0, *)
+    init(_ intent: ConfigurationAppIntent) {
+        self.username = intent.user?.id ?? intent.username
+        self.theme = WidgetIntentTheme(theme: intent.theme)
+        self.isPureBlackEnabled = intent.pureBlack
+    }
 }

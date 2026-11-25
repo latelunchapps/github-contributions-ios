@@ -20,31 +20,37 @@ final class ContributionsProvider: IntentTimelineProvider {
     // MARK: - Methods
 
     func placeholder(in context: Context) -> Entry {
-        let currentDate = Date.now
-        let dateRange = Calendar.current.date(byAdding: .year, value: -1, to: currentDate)?.range(to: currentDate) ?? []
-        let contributions = dateRange.map { GitHub.Contribution(date: $0, level: .zero) }
-        let configuration = WidgetIntentConfiguration(ConfigurationIntent())
-        return Entry(contributions: contributions, configuration: configuration)
+        .placeholder(configuration: WidgetIntentConfiguration(ConfigurationIntent()))
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Entry) -> Void) {
-        let currentDate = Date.now
-        let dateRange = Calendar.current.date(byAdding: .year, value: -1, to: currentDate)?.range(to: currentDate) ?? []
-        let contributions = dateRange.map { GitHub.Contribution(date: $0, level: .random()) }
-        let configuration = WidgetIntentConfiguration(configuration)
-        completion(Entry(contributions: contributions, configuration: configuration))
+        completion(.snapshot(configuration: WidgetIntentConfiguration(configuration)))
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping @Sendable (Timeline<Entry>) -> Void) {
-        let currentDate = Date.now
-        let refreshDate = Calendar.current.date(byAdding: .minute, value: 5, to: currentDate)!
-        let username = configuration.username?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         let configuration = WidgetIntentConfiguration(configuration)
         timelineTask = Task {
-            let contributions = try? await GitHub.getContributions(for: username)
-            let timeline = Timeline(entries: [Entry(contributions: contributions ?? [], configuration: configuration)], policy: .after(refreshDate))
-            completion(timeline)
+            completion(await Entry.timeline(configuration: configuration))
         }
+    }
+}
+
+// MARK: -
+
+@available(iOSApplicationExtension 17.0, *)
+struct ContributionsAppIntentProvider: AppIntentTimelineProvider {
+    typealias Entry = ContributionsViewModel
+
+    func placeholder(in context: Context) -> Entry {
+        .placeholder(configuration: WidgetIntentConfiguration(ConfigurationAppIntent()))
+    }
+
+    func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> Entry {
+        .snapshot(configuration: WidgetIntentConfiguration(configuration))
+    }
+
+    func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<Entry> {
+        await Entry.timeline(configuration: WidgetIntentConfiguration(configuration))
     }
 }
 
@@ -53,5 +59,32 @@ final class ContributionsProvider: IntentTimelineProvider {
 extension ContributionsViewModel: TimelineEntry {
     var date: Date {
         lastContributionDate ?? .now
+    }
+}
+
+// MARK: -
+
+extension ContributionsViewModel {
+    /// A year of empty contributions.
+    static func placeholder(configuration: WidgetIntentConfiguration) -> Self {
+        Self(contributions: lastYear().map { GitHub.Contribution(date: $0, level: .zero) }, configuration: configuration)
+    }
+
+    /// A year of random contributions.
+    static func snapshot(configuration: WidgetIntentConfiguration) -> Self {
+        Self(contributions: lastYear().map { GitHub.Contribution(date: $0, level: .random()) }, configuration: configuration)
+    }
+
+    /// The configured user's contributions, refreshed after five minutes.
+    static func timeline(configuration: WidgetIntentConfiguration) async -> Timeline<Self> {
+        let refreshDate = Calendar.current.date(byAdding: .minute, value: 5, to: .now)!
+        let username = configuration.username?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let contributions = try? await GitHub.getContributions(for: username)
+        return Timeline(entries: [Self(contributions: contributions ?? [], configuration: configuration)], policy: .after(refreshDate))
+    }
+
+    private static func lastYear() -> [Date] {
+        let currentDate = Date.now
+        return Calendar.current.date(byAdding: .year, value: -1, to: currentDate)?.range(to: currentDate) ?? []
     }
 }

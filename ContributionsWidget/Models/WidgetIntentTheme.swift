@@ -29,6 +29,17 @@ enum WidgetIntentTheme: Int, Sendable {
         }
     }
 
+    init(theme: ThemeAppEnum) {
+        switch theme {
+        case .green: self = .green
+        case .blue: self = .blue
+        case .red: self = .red
+        case .purple: self = .purple
+        case .yellow: self = .yellow
+        case .inverted: self = .inverted
+        }
+    }
+
     func color(for level: GitHub.Contribution.Level) -> Color {
         switch level {
         case .zero: return .tileEmpty
