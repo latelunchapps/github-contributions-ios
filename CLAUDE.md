@@ -56,7 +56,7 @@ Release builds run on **Xcode Cloud**. The workflow is configured in App Store C
 
 It writes both over the project-level `MARKETING_VERSION` / `CURRENT_PROJECT_VERSION` placeholders (`0.0.0` / `1`) in the throwaway clone, checks that every one changed, and refuses to run unless `CI_XCODE_CLOUD` is `TRUE`. This repo is public, so the script must never hold a secret. It needs none: signing is automatic in App Store Connect.
 
-Both `Info.plist` files read `$(MARKETING_VERSION)` / `$(CURRENT_PROJECT_VERSION)`. The app and the widget inherit the same project-level values, so their versions always match, and local builds report 0.0.0 (1). Never commit a version or build number, and never set either at target level. Don't run `bundle exec fastlane ios prepare_release`, `agvtool` or `increment_*` actions: they would rewrite the placeholders. The Fastlane lane is being retired.
+Both `Info.plist` files read `$(MARKETING_VERSION)` / `$(CURRENT_PROJECT_VERSION)`. The app and the widget inherit the same project-level values, so their versions always match, and local builds report 0.0.0 (1). Never commit a version or build number, and never set either at target level. Don't run `agvtool`: it would rewrite the placeholders.
 
 ## Rules
 
