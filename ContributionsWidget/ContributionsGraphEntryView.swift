@@ -5,7 +5,9 @@
 //  Created by Ander Goig on 23/10/2020.
 //
 
+import InterfaceKit
 import SwiftUI
+import WidgetKit
 
 struct ContributionsGraphEntryView: View {
     // MARK: - Properties
@@ -13,35 +15,21 @@ struct ContributionsGraphEntryView: View {
     @Environment(\.widgetFamily) var widgetFamily
     let entry: ContributionsViewModel
 
-    // MARK: - Init
+    // MARK: - View
 
     var body: some View {
+        homeScreenBody
+            .modifier(WidgetStyle(isPureBlackEnabled: entry.isPureBlackEnabled))
+    }
+
+    @ViewBuilder
+    private var homeScreenBody: some View {
         if entry.showError {
             Text("contributions-fetch-error")
                 .font(.callout)
                 .multilineTextAlignment(.center)
-                .modifier(WidgetStyle(isPureBlackEnabled: entry.isPureBlackEnabled))
         } else {
-            switch widgetFamily {
-            case .systemSmall:
-                ContributionsGraphWidgetView(viewModel: entry, rowsCount: 7, columnsCount: 9)
-                    .modifier(WidgetStyle(isPureBlackEnabled: entry.isPureBlackEnabled))
-            case .systemMedium:
-                ContributionsGraphWidgetView(viewModel: entry, rowsCount: 7, columnsCount: 20)
-                    .modifier(WidgetStyle(isPureBlackEnabled: entry.isPureBlackEnabled))
-            default:
-                EmptyView()
-            }
-        }
-    }
-}
-
-// MARK: -
-
-extension View {
-    func widgetBackground(_ backgroundView: some View) -> some View {
-        containerBackground(for: .widget) {
-            backgroundView
+            ContributionsGraphWidgetView(viewModel: entry, weekRows: 1)
         }
     }
 }
@@ -59,7 +47,8 @@ struct WidgetStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding()
-            .widgetBackground(backgroundColor)
+            .containerBackground(for: .widget) {
+                backgroundColor
+            }
     }
 }

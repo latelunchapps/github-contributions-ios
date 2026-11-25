@@ -18,9 +18,7 @@ struct ContributionsRow: View {
 
     var body: some View {
         ContributionsView(
-            rowsCount: ContributionsRowViewModel.rowsCount,
-            columnsCount: ContributionsRowViewModel.columnsCount,
-            colors: viewModel.contributions.levels.map { $0.map(\.color) },
+            calendar: viewModel.calendar,
             topLeadingText: viewModel.username,
             emptyText: NSLocalizedString("contributions-loading", comment: "")
         )

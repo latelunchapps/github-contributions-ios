@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import InterfaceKit
 import NetworkKit
 
 @dynamicMemberLookup
@@ -37,10 +38,10 @@ struct ContributionsViewModel {
         contributions.last?.date
     }
 
-    func contributionLevels(rowsCount: Int, columnsCount: Int) -> [[GitHub.Contribution.Level]] {
-        guard let lastDate = lastContributionDate else { return [] }
-        let tilesCount = rowsCount * columnsCount - (rowsCount - Calendar.current.component(.weekday, from: lastDate))
-        return contributions.suffix(tilesCount).map(\.level).chunked(into: rowsCount)
+    /// Every fetched day, for the graph to show as many weeks as fit.
+    var calendar: ContributionCalendar? {
+        guard let lastDate = lastContributionDate else { return nil }
+        return ContributionCalendar(levels: contributions.map(\.level.rawValue), lastDate: lastDate)
     }
 
     // MARK: - Init
