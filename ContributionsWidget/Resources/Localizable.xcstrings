@@ -16,6 +16,12 @@
             "value" : "Mantén pulsado y toca Editar widget para elegir un usuario de GitHub"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén presionado y toca Editar widget para elegir un usuario de GitHub"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34,6 +40,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personaliza la pantalla bloqueada y toca este widget para elegir un usuario"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Personaliza la pantalla bloqueada y toca este widget para elegir un usuario"
@@ -61,6 +73,12 @@
             "value" : "Se produjo un error al obtener las contribuciones"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocurrió un error al obtener las contribuciones de GitHub"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -78,6 +96,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalizar widget."
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Personalizar widget."
@@ -105,6 +129,12 @@
             "value" : "Fondo negro puro"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fondo negro puro"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -122,6 +152,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tema"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tema"
@@ -149,6 +185,12 @@
             "value" : "Azul"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Azul"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -166,6 +208,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verde"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verde"
@@ -193,6 +241,12 @@
             "value" : "Invertido"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invertido"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -210,6 +264,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morado"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Morado"
@@ -237,6 +297,12 @@
             "value" : "Rojo"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rojo"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -254,6 +320,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amarillo"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Amarillo"
@@ -281,6 +353,12 @@
             "value" : "Configuración"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -298,6 +376,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuario"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usuario"
@@ -325,6 +409,12 @@
             "value" : "Consulta tus contribuciones de GitHub."
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisa tus contribuciones de GitHub."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -345,6 +435,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gráfico"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gráfica"
           }
         },
         "ja" : {

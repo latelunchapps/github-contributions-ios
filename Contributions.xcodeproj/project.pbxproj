@@ -222,6 +222,7 @@
 			knownRegions = (
 				en,
 				es,
+				"es-419",
 				Base,
 				ja,
 			);
