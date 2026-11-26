@@ -15,6 +15,12 @@
             "value" : "Contribuciones"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contribuciones"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32,6 +38,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versión %@"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versión %@"
@@ -59,6 +71,12 @@
             "value" : "Añadir"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -76,6 +94,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancelar"
@@ -103,6 +127,12 @@
             "value" : "Introduce un nombre de usuario de GitHub."
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa un nombre de usuario de GitHub."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -120,6 +150,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre de usuario"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nombre de usuario"
@@ -147,6 +183,12 @@
             "value" : "Añadir contribuciones"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar contribuciones"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -164,6 +206,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eliminar"
@@ -191,6 +239,12 @@
             "value" : "Añade tus usuarios de GitHub favoritos."
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agrega tus usuarios de GitHub favoritos."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -208,6 +262,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin contribuciones"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sin contribuciones"
@@ -235,6 +295,12 @@
             "value" : "Cargando..."
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargando…"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -257,6 +323,12 @@
             "value" : "Acerca de"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -274,6 +346,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayuda"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ayuda"
@@ -324,6 +402,12 @@
             "value" : "Contacto"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contacto"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -341,6 +425,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Contribuye al proyecto!"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Contribuye al proyecto!"
@@ -368,6 +458,12 @@
             "value" : "Código abierto"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Código abierto"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -385,6 +481,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Te gusta la app?"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "¿Te gusta la app?"
@@ -412,6 +514,12 @@
             "value" : "Valorar la app"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calificar la app"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -429,6 +537,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Comparte con tus amigos!"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Comparte con tus amigos!"
@@ -456,6 +570,12 @@
             "value" : "Compartir"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartir"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -478,6 +598,12 @@
             "value" : "Personaliza la pantalla de inicio"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aprende a personalizar tu pantalla de inicio"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -495,6 +621,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración del widget"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configuración del widget"
@@ -522,6 +654,12 @@
             "value" : "Ajustes"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -544,6 +682,12 @@
             "value" : "OK"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -561,6 +705,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paso %u"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paso %u"
@@ -589,6 +739,12 @@
             "value" : "Mantén pulsada una zona vacía de la pantalla hasta que las apps se muevan."
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén presionada un área vacía de la pantalla hasta que las apps empiecen a moverse."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -611,6 +767,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toca 'Editar' en la parte superior de la pantalla y luego 'Añadir widget'."
+          }
+        },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca Editar en la parte superior de la pantalla y luego Agregar widget."
           }
         },
         "ja" : {
@@ -636,6 +798,12 @@
             "value" : "Busca 'Contribuciones' y toca el primer resultado."
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Busca “Contribuciones” y toca el primer resultado."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -659,6 +827,12 @@
             "value" : "Elige el tamaño del widget y luego toca 'Añadir widget'."
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desliza a la izquierda o a la derecha para elegir el tamaño del widget y luego toca Agregar widget."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -677,6 +851,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca el widget mientras se mueve para abrir el menú de configuración."
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toca el widget mientras se mueve para abrir el menú de configuración."
@@ -705,6 +885,12 @@
             "value" : "Configura el widget con el usuario de GitHub y el tema que prefieras."
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configura el widget con el usuario de GitHub y el tema que prefieras."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -728,6 +914,12 @@
             "value" : "... ¡Listo! ¡Disfruta de tu widget de contribuciones de GitHub!"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "… ¡y listo! Disfruta tu widget de contribuciones de GitHub."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -745,6 +937,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración del widget"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configuración del widget"

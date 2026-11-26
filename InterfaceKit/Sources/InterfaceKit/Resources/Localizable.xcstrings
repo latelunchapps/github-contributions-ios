@@ -17,6 +17,12 @@
             "value" : "Gráfico de contribuciones"
           }
         },
+        "es-MX" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gráfica de contribuciones"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36,6 +42,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contribuciones en %1$lld de los últimos %2$lld días"
+          }
+        },
+        "es-MX" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contribuciones en %1$lld de los últimos %2$lld días"
