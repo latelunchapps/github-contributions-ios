@@ -17,7 +17,7 @@
             "value" : "Gráfico de contribuciones"
           }
         },
-        "es-MX" : {
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gráfica de contribuciones"
@@ -47,7 +47,7 @@
             "value" : "Contribuciones en %1$lld de los últimos %2$lld días"
           }
         },
-        "es-MX" : {
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contribuciones en %1$lld de los últimos %2$lld días"
